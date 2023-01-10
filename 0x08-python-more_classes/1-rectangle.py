@@ -4,6 +4,7 @@
 
 class Rectangle:
     """class for rectangle"""
+
     def __init__(self, width=0, height=0):
         """initialize a rectangle
         args:
