@@ -9,7 +9,7 @@ class Square(Rectangle):
     """represents a square
     inherits from Rectangle
     """
-    
+
     def __init__(self, size):
         """initialize a square
         args:
