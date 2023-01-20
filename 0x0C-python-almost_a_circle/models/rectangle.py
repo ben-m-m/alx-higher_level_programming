@@ -90,3 +90,10 @@ class Rectangle(Base):
         """returns the area value of Rectangle instance"""
 
         return self.width * self.height
+
+    def display(self):
+        """display # in rectangle form"""
+        if self.width == 0 or self.height == 0:
+            print("")
+        else:
+            print("#")
