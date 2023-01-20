@@ -101,7 +101,7 @@ class Rectangle(Base):
         for i in range(self.height):
             [print("", end="") for x in range(self.x)]
             [print('#', end="")for j in range(self.width)]
-            print()
+            print("")
 
     def __str__(self):
         """Overriding str method from Base"""
