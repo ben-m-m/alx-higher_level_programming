@@ -107,3 +107,26 @@ class Rectangle(Base):
         """Overriding str method from Base"""
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        """assigns an argument to each attribute
+            - 1st argument should be the id attribute
+            - 2nd argument should be the width attribute
+            - 3rd argument should be the height attribute
+            - 4th argument should be the x attribute
+            - 5th argument should be the y attribute
+        """
+         """Update the object with keyword-argument"""
+        attributes = ['id', 'width', 'height', 'x', 'y']
+
+        for idx, x in enumerate(args):
+            if idx >= len(attributes):
+                return
+
+            self.__setattr__(attributes[idx], x)
+
+        if args:
+            return
+
+        for k, v in kwargs.items():
+            self.__setattr__(k, v)
