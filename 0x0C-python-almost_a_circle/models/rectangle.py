@@ -98,9 +98,9 @@ class Rectangle(Base):
             return
 
         [print("") for y in range(self.y)]
-        for i in range(self.height):
-            [print("", end="") for x in range(self.x)]
-            [print('#', end="")for j in range(self.width)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="")for w in range(self.width)]
             print("")
 
     def __str__(self):
