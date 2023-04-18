@@ -159,6 +159,6 @@ class Rectangle(Base):
                 "id": self.id,
                 "width": self.width,
                 "height": self.height,
-                "x": self.x
+                "x": self.x,
                 "y": self.y
                 }
