@@ -5,7 +5,7 @@ find_peak - finds the peak in an array
 
 
 def find_peak(list_of_integers):
-    if list_of_integers == []:
+    if not list_of_integers:
         return None
 
     left = 0
