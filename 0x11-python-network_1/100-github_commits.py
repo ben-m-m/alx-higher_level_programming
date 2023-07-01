@@ -13,4 +13,4 @@ if __name__ == "__main__":
 
     for commit in commits[:10]:
         print(commit.get("sha"), end=": ")
-        print(comit.get("commit").get('author').get('name'))
+        print(commit.get("commit").get('author').get('name'))
