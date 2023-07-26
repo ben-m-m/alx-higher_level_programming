@@ -9,7 +9,7 @@ request(url, (err, response, body) => {
   }
   const completed = {};
   const tasks = JSON.parse(body);
-  for (const i in tasks) {
+  for (let i in tasks) {
     const task = tasks[i];
     if (task.completed === true) {
       if (completed[task.userId] === undefined) {
