@@ -7,17 +7,17 @@ request(url, (err, response, body) => {
   if (err) {
     console.log(err);
   }
-  const complete = {};
+  const completed = {};
   const tasks = JSON.parse(body);
   for (const i in tasks) {
     const task = tasks[i];
-    if (task.complete === true) {
-      if (complete[task.userId] === undefined) {
-        complete[task.userId] = 1;
+    if (task.completed === true) {
+      if (completed[task.userId] === undefined) {
+        completed[task.userId] = 1;
       } else {
-        complete[task.userId]++;
+        completed[task.userId]++;
       }
     }
   }
-  console.log(complete);
+  console.log(completed);
 });
